@@ -1,0 +1,317 @@
+﻿html, body
+{
+    font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.0em;
+    line-height: 1.6em;
+}
+body 
+{
+    margin: 0;
+    font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif;
+}
+h2
+{
+    font-size:1.6em;
+    font-weight:100;
+    cursor:pointer;
+}
+a
+{
+    color:#9619ba;
+    cursor:pointer;
+}
+a:hover
+{
+    color:#808080;
+}
+.subline
+{
+    padding-top:50px;
+}
+.subline a
+{
+    padding-right:20px;
+}
+.p-space
+{
+    line-height: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.show
+{
+    visibility:visible;
+    display:block;
+    height:auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.hide
+{
+    visibility:hidden;
+    display:none;
+    height:100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.in-hide
+{
+    display:none;
+}
+.in-show
+{
+    display:block;
+}
+#basecontainer
+{
+    width:100%;
+    margin-top: 50px;
+}
+.base-inside
+{
+    width:50%;
+    margin:0 auto;
+}
+.base-start
+{
+    background:#cbf2ff;
+    margin-bottom:5px;
+    padding:15px;
+}
+.base-active
+{
+    background:#f6fdff;
+}
+.base-start:hover
+{
+    background:#f6fdff;
+}
+.base-element
+{
+
+}
+.logo_banner 
+{
+    background-image: url('../images/Logo_Diff.png');
+    background-size: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 150px;
+    background-position-y: 50px;
+}
+
+/* Menu */
+.menu
+{
+    width:100%;
+    background:#10BCF4;
+    position:absolute;
+    top:0px;
+}
+ul.ul-menu
+{
+    list-style:outside;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    padding-top:10px;
+    padding-bottom:10px;
+    z-index:5;
+    margin-right: 10px;
+    float: right;
+}
+.menu > button {
+    width:50px;
+    font-weight:600;
+    border:0;
+}
+ul.ul-menu > li, li a
+{
+    display:inline;
+    color:#ffffff;
+}
+ul.ul-menu > li[class]:hover, ul.ul-menu > li a:hover
+{
+    background:#10BCF4;
+    color:#fff;
+}
+.btn-menu
+{
+    height:40px;
+    background:none;
+    border:none;
+}
+button
+{
+    height: 40px;
+    background: #10BCF4;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:#fff;
+    font-size:1.1em;
+    font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif;
+    width:100%;
+}
+button:hover 
+{
+    background:#fff;
+    color:#10BCF4;
+}
+/* form elements */
+input
+{
+    height:40px;
+    border:solid #10BCF4 1px;
+    background:none;
+    width: 98%;
+}
+.form-in
+{
+    display: block;
+    font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.1em;
+    color:#9619ba;
+    padding-left:5px;
+}
+.div-inline
+{
+    display: inline-block;
+    width:49%;
+    margin-right: 1%;
+}
+.div-inline-4
+{
+    display: inline-block;
+    width:24%;
+    margin-right: 1%;
+}
+.form-span
+{
+    display: block;
+    line-height: 50px;
+    cursor:pointer;
+}
+/* Footer */
+.diff_footer {
+    padding-top: 2%;
+    background: #cbf2ff;
+    padding-bottom: 1%;
+    height: 200px;
+}
+
+.diff_footer_txt {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.diff_copyr {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 0.9em;
+}
+.foot_br 
+{
+    display: none;
+}
+
+/* Responsive */
+@media screen and (max-width:1400px) 
+{
+    .base-inside 
+    {
+        width: 70%;
+    }
+}
+@media screen and (max-width:1200px)
+{
+    .base-inside 
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:1150px) 
+{
+    .div-inline-4
+    {
+        width:49%;
+        margin-bottom:10px;
+    }
+}
+
+@media screen and (max-width:750px) 
+{
+    .menu
+    {
+        background:#10BCF4;
+        height:40px;
+    }
+    ul.ul-menu
+    {
+        float:left;
+        margin-left:0;
+        margin-top:0;
+        display:none;
+        background:#cbf2ff;
+        box-shadow:#808080 0px 0px 10px;
+    }
+    ul.ul-menu > li 
+    {
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height:40px;
+    }
+    .div-inline
+    {
+        display: block;
+        width: 100%;
+    }
+    .div-inline-4
+    {
+        display: block;
+        width:100%;
+    }
+    button
+    {
+        width:100%;
+        margin-bottom: 10px;
+    }
+    .diff_footer_txt 
+    {
+        margin: 0 auto;
+        width: 100%;
+        padding-top: 20px;
+        line-height: 1em;
+    }
+
+    .foot_br 
+    {
+        display: block;
+    }
+
+    .foot_ln 
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:360px)
+{
+    .base-inside 
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #basecontainer 
+    {
+        width: auto;
+        padding-top:10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
